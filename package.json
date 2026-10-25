@@ -1,0 +1,16 @@
+{
+  "name": "zm-hunter-x-ahmed-antlink-bot",
+  "version": "1.0.0",
+  "description": "WhatsApp group anti-link bot with QR and pairing-code dashboard",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "engines": { "node": ">=20" },
+  "dependencies": {
+    "@whiskeysockets/baileys": "^6.7.18",
+    "express": "^4.21.2",
+    "pino": "^9.6.0",
+    "qrcode": "^1.5.4"
+  }
+}

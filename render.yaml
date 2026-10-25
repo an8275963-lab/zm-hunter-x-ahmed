@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: zm-hunter-x-ahmed
+    runtime: node
+    plan: starter
+    buildCommand: npm install
+    startCommand: npm start
+    disk:
+      name: whatsapp-session
+      mountPath: /opt/render/project/src/auth_info_baileys
+      sizeGB: 1
