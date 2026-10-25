@@ -12,8 +12,7 @@ const {
 
 const app = express();
 app.use(express.json());
-app.use(express.static(path.join(__dirname, 'public')));
-
+app.use(express.static(__dirname));
 const PORT = process.env.PORT || 3000;
 const DASHBOARD_PASSWORD = process.env.DASHBOARD_PASSWORD || '';
 const AUTH_DIR = path.join(__dirname, 'auth_info_baileys');
